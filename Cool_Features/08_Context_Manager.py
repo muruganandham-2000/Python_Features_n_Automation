@@ -1,4 +1,4 @@
-#Context Manager
+# Context Manager
 with open("Cool_Features/Files/example.txt", "r") as file:
     content = file.read()
 print(content)
@@ -9,7 +9,6 @@ print(content)
 #     def __init__(self, file_name, mode):
 #         """
 #         Initialize the file manager with the file name and mode.
-        
 #         Args:
 #             file_name (str): The name of the file to open.
 #             mode (str): The mode to open the file in (e.g., 'r', 'w').
@@ -29,12 +28,10 @@ print(content)
 #     def __exit__(self, exc_type, exc_value, traceback):
 #         """
 #         Close the file when exiting the context.
-        
 #         Args:
 #             exc_type (type): The exception type, if any.
 #             exc_value (Exception): The exception value, if any.
 #             traceback (Traceback): The traceback object, if any.
-        
 #         Returns:
 #             bool: True to suppress exceptions, False otherwise.
 #         """
@@ -57,10 +54,10 @@ print(content)
 # def file_manager(file_name, mode):
 #     """
 #     A context manager to handle file operations.
-    
 #     Args:
 #         file_name (str): The name of the file to be opened.
-#         mode (str): The mode in which the file is to be opened (e.g., 'r', 'w').
+#         mode (str): The mode in which the file is to be opened (e.g., 'r',
+#         'w').
 #     """
 #     file = None
 #     try:
@@ -74,4 +71,5 @@ print(content)
 
 
 # with file_manager("Cool_Features/Files/example.txt", "w") as f:
-#     f.write("Hello, this is written using a context manager created with decorator.")
+#     f.write("Hello, this is written using a context manager created with "
+#             "decorator.")
